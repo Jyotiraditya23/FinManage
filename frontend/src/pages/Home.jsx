@@ -19,7 +19,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   
   const fetchDashboardData = async() => {
-    if(loading) return;
+    if(loading) return; 
     setLoading(true);
     try {
       const response = await axiosConfig.get(API_ENDPOINTS.DASHBOARD_DATA);
